@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  react:
+    build:
+      context: .
+      dockerfile: Dockerfiles/react.Dockerfile 
+    volumes:
+      - ./react-files/my-app/src:/app/src
+      - ./react-files/my-app/package.json:/app/package.json
+      - ./react-files/my-app/package-lock.json:/app/package-lock.json
+    ports:
+      - "3000:3000"

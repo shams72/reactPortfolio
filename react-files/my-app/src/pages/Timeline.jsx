@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Box, Paper } from "@mui/material";
-import backgroundImage from "../assets/l.jpg";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { ChevronDown } from "lucide-react";
 import { motion } from "framer-motion";
@@ -122,7 +121,10 @@ const Timeline = () => {
               offset={-64}
               className="text-white text-lg cursor-pointer mt-2"
             >
-             <ChevronDown size={100} color="white" sx={{ cursor: "pointer" }} />
+            <div style={{ cursor: "pointer" }}>
+              <ChevronDown size={100} color="white" sx={{ cursor: "pointer" }} />
+            </div>
+
             </Link>
           </div>
         </motion.div>

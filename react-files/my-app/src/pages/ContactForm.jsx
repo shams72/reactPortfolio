@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import a from "../assets/line.jpg"
+import space from "../assets/space2.jpg"
 import { Snackbar, Alert } from "@mui/material";
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
   TextField,
   Button,
@@ -9,6 +9,7 @@ import {
   Box,
   Paper,
 } from "@mui/material";
+import { FaXing } from 'react-icons/fa'; // React Icons Xing Icon
 
 
 const ContactForm = () => {
@@ -67,11 +68,11 @@ const ContactForm = () => {
   };
 
   return (
-    <Box sx={{display: "flex", alignItems: "center", background: "black", backgroundImage: "url('"+ a + "')",
+    <Box sx={{display: "flex", alignItems: "center", background: "black", backgroundImage: "url('"+ space + "')",
             height: "100vh",
-        width: "100%",    }}>
+        width: "100%"  }}>
   
-      <Box sx={{ flex: 1, pr: 2,height: "50%",width:"30px",marginLeft:"5vw"  }}>
+      <Box sx={{ flex: 1, pr: 2,height: "50%",width:"30px",marginLeft:"5vw", marginBottom:"70px"   }}>
         <Paper elevation={3} sx={{ p: 4, textAlign: "center",width:"550px"  }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact Me
@@ -122,9 +123,6 @@ const ContactForm = () => {
                 Message sent!
               </Alert>
             </Snackbar>
-
-
-            
           </Box>
         </Paper>
       </Box>
@@ -138,12 +136,13 @@ const ContactForm = () => {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "rgba(230, 229, 220, 0.72)",
+          background: "rgba(243, 243, 239, 0.79)",
           p: 4,
           borderRadius: 2,
           height: "35%",
           marginRight:"30px",
           textAlign: "center",
+           marginBottom:"70px"
         }}
       >
         <Typography variant="h5" fontWeight="bold">
@@ -152,6 +151,26 @@ const ContactForm = () => {
         <Typography variant="body1" sx={{ mt: 2 }}>
           Email: <strong>shamsmohammed726@gmail.com</strong>
         </Typography>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/shams-mohammed-5a7a372ba/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", cursor: "pointer" }} // Cursor on LinkedIn icon
+          >
+            <LinkedInIcon style={{ fontSize: 40, color: "blue" }}  />
+          </a>
+          <a
+            href="https://www.xing.com/profile/shams_kabir/web_profiles?expandNeffi=true"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ textDecoration: "none", cursor: "pointer" }} // Cursor on Xing icon
+          >
+             <FaXing style={{ fontSize: 40, color: "green" }} /> 
+          </a>
+        </div>
+
+
       </Box>
     </Box>
   );

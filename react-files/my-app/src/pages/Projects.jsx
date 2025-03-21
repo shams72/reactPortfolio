@@ -11,10 +11,10 @@ const projects = [
   },
 
   {
-    title: "ShopEasy",
-    link: "https://github.com/shams72/FriendlyRobot",
+    title: "ShopEsy",
+    link: "https://github.com/shams72/ShopEsy",
     description:
-      "ShopEasy is a simple CRUD application developed as part of a web development course to learn React. The backend was implemented using a RESTful API with Express. Built with React and TypeScript, it allows users to add articles to a shopping list and perform CRUD operations on both articles and the list.",
+      "ShopEasy is a simple CRUD application developed as part of a web development course to learn React. The backend was implemented using a RESTful API with Express and tested with Jest and Supertest. Built with React and TypeScript, it allows users to add articles to a shopping list and perform CRUD operations on both articles and the list.",
   },
   {
     title: "Portfolio Website",
@@ -24,13 +24,13 @@ const projects = [
   },
   {
     title: "Yapple Social Media",
-    link: "https://github.com/shams72/myPortfolio",
+    link: "https://github.com/shams72/Yapple-Social",
     description:
-      "Yapple is a social media website developed as part of a collaborative project for an advanced web module course. My contributions included implementing bell notifications on the frontend, fixing frontend bugs, and writing API calls for backend functionalities, particularly for setting up communities and posts.",
+      "Yapple is a social media website developed as part of a collaborative project for an advanced web module course. My contributions included implementing bell notifications on the frontend, fixing frontend bugs, and writing API calls for backend functionalities, particularly for setting up communities and posts as well as writing the tests for the endpoints.",
   },  
   {
     title: "Skyrim Website",
-    link: "https://github.com/shams72/myPortfolio",
+    link: "https://github.com/shams72/Skyrim",
     description:
       "This was a collaborative project for a DevOps course, designed using DevOps principles for a hypothetical customer. I was responsible for writing RESTful APIs and their corresponding tests, ensuring they aligned with user stories to meet customer expectations.",
   },
@@ -46,7 +46,6 @@ const projects = [
 const Projects = () => {
   return (
         <div
-        
           style={{     
             height: "100vh",
             width: "100%",   
@@ -82,18 +81,6 @@ const Projects = () => {
               <Link href={project.link} target="_blank" underline="hover">
                 {project.title}
               </Link>
-              {project.link1 && (
-                <>
-                  {" / "}
-                  <Link href={project.link1} target="_blank" underline="hover">
-                    Space Game
-                  </Link>
-                  {" / "}
-                  <Link href={project.link2} target="_blank" underline="hover">
-                    Breakout Game
-                  </Link>
-                </>
-              )}
             </Typography>
             <Typography variant="body2" color="textSecondary" mt={1}>
               {project.description}

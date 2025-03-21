@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box, Typography, Paper } from "@mui/material";
 import { motion } from "framer-motion"; // For smooth animations
-import a from "../assets/space.jpg"
+import space from "../assets/space.jpg"
 
 const Greetings = () => {
   const greetings = [
@@ -56,7 +56,7 @@ const Greetings = () => {
         alignItems: "center",
         justifyContent: "center",
         background:"black",
-        backgroundImage: "url('"+ a + "')", // Replace with your image URL
+        backgroundImage: "url('"+ space + "')", // Replace with your image URL
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

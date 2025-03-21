@@ -1,6 +1,5 @@
 import React from "react";
 import { Typography, Paper, Box, Avatar } from "@mui/material";
-import paint from "../assets/l.jpg"; // Your background image
 import pic from "../assets/pic2.jpg"
 
 const AboutMe = () => {
@@ -70,9 +69,6 @@ const AboutMe = () => {
           ))}
         </Box>
 
-        <Typography variant="body1" mt={3} sx={{ fontSize: '1.2rem', lineHeight: 1.8 }}>
-          If my profile interests you, feel free to reach out!
-        </Typography>
       </Box>
 
       {/* Right side: Avatar */}

@@ -1,3 +1,4 @@
+import { Container, Box } from "@mui/material";
 import Navbar from "./pages/Navbar";
 import Greetings from "./pages/Greetings";
 import AboutMe from "./pages/AboutMe";

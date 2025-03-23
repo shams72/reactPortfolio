@@ -68,12 +68,21 @@ const ContactForm = () => {
   };
 
   return (
-    <Box sx={{display: "flex", alignItems: "center", background: "black", backgroundImage: "url('"+ space + "')",
-            height: "100vh",
-        width: "100%"  }}>
-  
-      <Box sx={{ flex: 1, pr: 2,height: "50%",width:"30px",marginLeft:"5vw", marginBottom:"70px"   }}>
-        <Paper elevation={3} sx={{ p: 4, textAlign: "center",width:"550px"  }}>
+    <div
+    style={{     
+      height: "100vh",
+      width: "100%",   
+      display: "flex",
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "center",
+      backgroundImage: "url('"+ space + "')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  >
+      <Box sx={{ flex: 1, pr: 2, minHeight: "50vh", width: "75%", marginLeft: "5vw", marginBottom: "70px" }}>
+        <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"75%"  }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact Me
           </Typography>
@@ -140,6 +149,7 @@ const ContactForm = () => {
           p: 4,
           borderRadius: 2,
           height: "35%",
+          width:"25%",
           marginRight:"30px",
           textAlign: "center",
            marginBottom:"70px"
@@ -172,7 +182,7 @@ const ContactForm = () => {
 
 
       </Box>
-    </Box>
+    </div>
   );
 };
 

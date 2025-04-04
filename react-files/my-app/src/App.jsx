@@ -1,4 +1,3 @@
-import { Container, Box } from "@mui/material";
 import Navbar from "./pages/Navbar";
 import Greetings from "./pages/Greetings";
 import AboutMe from "./pages/AboutMe";
@@ -10,7 +9,7 @@ function App() {
   return (
     <>
       
-           <Navbar />
+            <Navbar />
             <div id="greetings"><Greetings /></div>
             <div id="about"><AboutMe /></div>
             <div id="timeline"><Timeline /></div>

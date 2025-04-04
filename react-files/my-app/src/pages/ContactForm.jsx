@@ -9,6 +9,8 @@ import {
   Box,
   Paper,
 } from "@mui/material";
+import DownloadIcon from '@mui/icons-material/Download';
+import resume from "../assets/Lebenslauf.pdf"
 import { FaXing } from 'react-icons/fa'; // React Icons Xing Icon
 
 
@@ -179,6 +181,31 @@ const ContactForm = () => {
              <FaXing style={{ fontSize: 40, color: "green" }} /> 
           </a>
         </div>
+        <Button
+          variant="contained"
+          size="large"
+          endIcon={<DownloadIcon />}
+          href={resume}
+          download
+          sx={{
+            background: 'linear-gradient(90deg, #6366f1, #3b82f6)', // Indigo to Blue gradient
+            color: '#fff',
+            borderRadius: '20px',
+            textTransform: 'none',
+            fontWeight: 'bold',
+            paddingX: 3,
+            paddingY: 1.5,
+            boxShadow: 3,
+            '&:hover': {
+              background: 'linear-gradient(90deg, #4f46e5, #2563eb)', // Slightly darker on hover
+              boxShadow: 6,
+              transform: 'scale(1.05)',
+              transition: '0.3s ease',
+            },
+          }}
+        >
+          Download My Resume (German)
+        </Button>
 
 
       </Box>

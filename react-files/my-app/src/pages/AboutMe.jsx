@@ -45,23 +45,25 @@ const AboutMe = () => {
       </Typography>
 
       <Typography variant="body1" paragraph sx={{ fontSize: '1.2rem', lineHeight: 1.8 }}>
-        My name is Shams, and I am currently a Computer Science bachelor's student at Darmstadt University of Applied Sciences, in my fifth semester. Alongside my studies, I work as a Werkstudent in software development and as a student assistant at my university, where I work with Python and Docker containers. 
+        My name is Shams, and I am currently a Computer Science bachelor's student at Darmstadt University of Applied Sciences, in my sixth semester. Alongside my studies, I work as a Werkstudent in software development and as a student assistant at my university, where I work with Python and Docker containers. 
+      </Typography>
+      <Typography variant="body1" paragraph sx={{ fontSize: '1.2rem', lineHeight: 1.8 }}>
+        I originate from Bangladesh, but I spent most of my childhood and school years in Qatar before moving to Germany for university. In my free time, I enjoy capturing moments with my phone. 
       </Typography>
 
       <Typography variant="h5" fontWeight="bold" mt={3} sx={{ fontSize: '1.4rem', lineHeight: 1.8 }}>
-        I happen to understand:
+      I’m familiar with:
       </Typography>
-
 
         <Box component="ul" sx={{ paddingLeft: 3 }}>
           {[
             "Qt (UI Development)",
-            "Java",
             "React with TypeScript/JavaScript (Beginner)",
             "SQL",
             "PHP, HTML, CSS",
             "Python",
             "Docker",
+            "Java",
           ].map((skill, index) => (
             <Typography component="li" key={index} variant="body1">
               {skill}

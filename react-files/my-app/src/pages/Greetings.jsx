@@ -10,6 +10,7 @@ const Greetings = () => {
     "ٱلسَّلَامُ عَلَيْكُمْ",
     "স্বাগতম",
     "வணக்கம்",
+    "Chào bạn!",
     "Привет",
     "こんにちは",
     "സ്വാഗതം",
@@ -23,6 +24,7 @@ const Greetings = () => {
     "~(As-salāmu ʿalaykum)~",
     "~(Shagotom)~",
     "~(Vaṇakkam)~",
+    "~(Chow ban)~",
     "~(Privyet)~",
     "~(Konnichiwa)~",
     "~(Swagatham)~",
@@ -119,6 +121,7 @@ const Greetings = () => {
                 fontSize: "1.5rem",
                 color: "#555555"   
               }}
+
             >
               {translations[currentIndex-2]}
             </Typography>

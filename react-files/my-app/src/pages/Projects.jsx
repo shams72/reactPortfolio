@@ -20,8 +20,7 @@ const projects = [
     title: "Portfolio Website",
     link: "https://github.com/shams72/reactPortfolio",
     description:
-      "A simple portfolio website built using React. It showcases my experience, provides information about me, and offers a way to contact me.",
-  },
+    "A simple portfolio website built using React. It showcases my experience, provides information about me, and offers a way to contact me. You can explore my projects by clicking on the project titles. Additionally, you can download my resume, which I created using HTML and CSS. The resume can be found in the Contacts section of the website. To view the code behind this project, click on the footer at the end of my resume."  },
   {
     title: "Yapple Social Media",
     link: "https://github.com/shams72/Yapple-Social",

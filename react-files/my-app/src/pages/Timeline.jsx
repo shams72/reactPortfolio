@@ -26,17 +26,15 @@ const timelineData = [
 const Timeline = () => {
   return (
 
-    <Box    
-      sx={{     
-        height: "100vh",
-        width: "100%",   
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        backgroundColor: "black",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
+    <div    
+      style={{
+              height: "100vh",             
+              backgroundColor: "black",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+            
       }}
     >
       <div style={{  
@@ -130,7 +128,7 @@ const Timeline = () => {
         </motion.div>
       </div>
     </div>
-    </Box>
+    </div>
     
   );
 };

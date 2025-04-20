@@ -81,10 +81,11 @@ const ContactForm = () => {
       backgroundImage: "url('"+ space + "')",
       backgroundSize: "cover",
       backgroundPosition: "center",
+      gap:"10px"
     }}
   >
-      <Box sx={{ flex: 1, pr: 2, minHeight: "50vh", width: "75%", marginLeft: "5vw", marginBottom: "70px" }}>
-        <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"75%"  }}>
+      <Box sx={{ flex: 1, pr: 2, height: "auto", width:"auto", marginBottom: "70px",marginLeft:"65px" }}>
+        <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"85%"  }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact Me
           </Typography>
@@ -206,6 +207,12 @@ const ContactForm = () => {
         >
           Download My Resume (German)
         </Button>
+
+        <Typography variant="body2" color="textSecondary" align="center" sx={{ mt: 4 }}>
+          © Shams Kabir — All rights reserved. Built with ❤️ using React.js 
+        </Typography>
+
+
 
 
       </Box>

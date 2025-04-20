@@ -19,27 +19,36 @@ const AboutMe = () => {
         backgroundColor: "black",
         backgroundSize: "cover",
         backgroundPosition: "center",
+        overflowY:"auto",
+       
       }}
     > 
   
-      <Box
-        component={Paper}
-        elevation={6}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "flex-start", // Align text to the left
-          justifyContent: "center",
-          maxHeight: "70%",
-          width: "55vw", // Adjust width for left content
-          borderRadius: 4,
-          marginLeft:"5vw",
-          padding: 4,
-          background: "rgba(245, 245, 245, 0.9)", // Slightly transparent background
-          color: "black", // Set text color to black for contrast
-          textAlign: "left",
-        }}
-      >
+  <Box
+  component={Paper}
+  elevation={6}
+  sx={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "flex-start",
+    justifyContent: "flex-start", // Not center, so content can grow
+    height: "auto", // Fixed height to enable scroll
+    width: "45%",
+    borderRadius: 4,
+    marginLeft: "5vw",
+    padding: 4,
+    background: "rgba(245, 245, 245, 0.9)",
+    color: "black",
+    textAlign: "left",
+    overflowY: "auto", // Scroll inside
+    flexShrink: 0, // Important: prevent layout squishing
+    "&::-webkit-scrollbar": {
+      width: 0,
+    },
+    scrollbarWidth: "none",
+  }}
+>
+
       <Typography variant="h5" fontWeight="bold" mt={3} sx={{ fontSize: '1.4rem', lineHeight: 1.8 }}>
         Hello there,
       </Typography>

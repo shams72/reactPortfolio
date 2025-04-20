@@ -8,7 +8,7 @@ import { useMediaQuery, Typography, Box } from '@mui/material';
 
 
 function App() {
-  const isMobile = useMediaQuery('(max-width:7px)');
+  const isMobile = useMediaQuery('(max-width:768px)');
 
   const copyToClipboard = () => {
 

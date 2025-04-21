@@ -33,7 +33,7 @@ const AboutMe = () => {
     alignItems: "flex-start",
     justifyContent: "flex-start", // Not center, so content can grow
     height: "auto", // Fixed height to enable scroll
-    width: "50%",
+    width: "55%",
     borderRadius: 4,
     marginLeft: "5vw",
     padding: 4,
@@ -54,7 +54,7 @@ const AboutMe = () => {
       </Typography>
 
       <Typography variant="body1" paragraph sx={{ fontSize: '1.2rem', lineHeight: 1.8 }}>
-        My name is Shams, and I am currently a Computer Science bachelor's student at Darmstadt University of Applied Sciences, in my sixth semester. Alongside my studies, I work as a Werkstudent in software development and as a student assistant at my university, where I work with Python and Docker containers. 
+        My name is Shamss, and I am currently a Computer Science bachelor's student at Darmstadt University of Applied Sciences, in my sixth semester. Alongside my studies, I work as a Werkstudent in software development and as a student assistant at my university, where I work with Python and Docker containers. 
       </Typography>
       <Typography variant="body1" paragraph sx={{ fontSize: '1.2rem', lineHeight: 1.8 }}>
         I originate from Bangladesh, but I spent most of my childhood and school years in Qatar before moving to Germany for university. In my free time, I enjoy capturing moments with my phone. 

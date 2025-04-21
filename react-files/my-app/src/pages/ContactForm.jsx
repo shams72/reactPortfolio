@@ -87,11 +87,12 @@ const ContactForm = () => {
       <div
           style={{
             flex: 1,
-            paddingRight: '16px', // pr: 2 = 2 * 8px (default MUI spacing)
+            paddingRight: '0', 
             maxWidth: '800px',
             width: '100%',
             height: 'auto',
-            marginBottom: '70px',
+            marginLeft:"80px",
+            marginBottom: '80px',
           }}
         >
         <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"85%"  }}>

@@ -84,7 +84,16 @@ const ContactForm = () => {
           gap:"10px"
         }}
       >
-      <Box sx={{flex: 1,pr: 2, maxWidth: "800px", width: "100%", height: "auto",  marginBottom: "70px", }}>
+      <div
+          style={{
+            flex: 1,
+            paddingRight: '16px', // pr: 2 = 2 * 8px (default MUI spacing)
+            maxWidth: '800px',
+            width: '100%',
+            height: 'auto',
+            marginBottom: '70px',
+          }}
+        >
         <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"85%"  }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact Me
@@ -136,12 +145,11 @@ const ContactForm = () => {
             </Snackbar>
           </Box>
         </Paper>
-      </Box>
+      </div>
 
       {/* Right Side - Contact Details */}
       <Box
-        sx={{
-         
+        sx={{         
           width: "100%",
           maxWidth: "700px", // Fixed max width to keep it small
           pl: 2,

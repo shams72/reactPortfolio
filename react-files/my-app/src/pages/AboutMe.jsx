@@ -33,7 +33,7 @@ const AboutMe = () => {
     alignItems: "flex-start",
     justifyContent: "flex-start", // Not center, so content can grow
     height: "auto", // Fixed height to enable scroll
-    width: "45%",
+    width: "50%",
     borderRadius: 4,
     marginLeft: "5vw",
     padding: 4,

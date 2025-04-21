@@ -70,21 +70,21 @@ const ContactForm = () => {
   };
 
   return (
-    <div
-    style={{     
-      height: "100vh",
-      width: "100%",   
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center",
-      justifyContent: "center",
-      backgroundImage: "url('"+ space + "')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      gap:"10px"
-    }}
-  >
-      <Box sx={{ flex: 1, pr: 2, height: "auto", width:"auto", marginBottom: "70px",marginLeft:"65px" }}>
+      <div
+        style={{     
+          height: "100vh",
+          width: "100%",   
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "center",
+          backgroundImage: "url('"+ space + "')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          gap:"10px"
+        }}
+      >
+      <Box sx={{flex: 1,pr: 2, maxWidth: "800px", width: "100%", height: "auto",  marginBottom: "70px", }}>
         <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"85%"  }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact Me
@@ -97,7 +97,6 @@ const ContactForm = () => {
               variant="outlined"
               value={formData.name}
               onChange={handleChange}
-
               sx={{ mb: 1 }}
             />
             <TextField
@@ -142,7 +141,9 @@ const ContactForm = () => {
       {/* Right Side - Contact Details */}
       <Box
         sx={{
-          flex: 1,
+         
+          width: "100%",
+          maxWidth: "700px", // Fixed max width to keep it small
           pl: 2,
           display: "flex",
           flexDirection: "column",
@@ -151,13 +152,14 @@ const ContactForm = () => {
           background: "rgba(243, 243, 239, 0.79)",
           p: 4,
           borderRadius: 2,
-          height: "35%",
-          width:"25%",
-          marginRight:"30px",
+          height: "auto",
+          marginRight: "30px",
           textAlign: "center",
-           marginBottom:"70px"
+          marginBottom: "70px",
+          boxSizing: "border-box",
         }}
       >
+
         <Typography variant="h5" fontWeight="bold">
           Get in Touch
         </Typography>
@@ -211,10 +213,6 @@ const ContactForm = () => {
         <Typography variant="body2" color="textSecondary" align="center" sx={{ mt: 4 }}>
           © Shams Kabir — All rights reserved. Built with ❤️ using React.js 
         </Typography>
-
-
-
-
       </Box>
     </div>
   );

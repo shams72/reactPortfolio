@@ -95,7 +95,7 @@ const ContactForm = () => {
             marginBottom: '80px',
           }}
         >
-        <Paper elevation={3} sx={{ p: 4, textAlign: "center", height: "90%",width:"85%"  }}>
+        <Paper elevation={3} sx={{background: "rgba(222, 221, 228, 0.96)", p: 4, textAlign: "center", height: "90%",width:"85%"  }}>
           <Typography variant="h5" fontWeight="bold" gutterBottom>
             Contact Me
           </Typography>
@@ -131,7 +131,7 @@ const ContactForm = () => {
 
               sx={{ mb: 3 }}
             />
-            <Button variant="contained" color="primary" type="submit" fullWidth>
+            <Button variant="contained" color="primary" type="submit"  sx={{ background: 'linear-gradient(90deg,rgb(89, 12, 231),rgb(14, 236, 62))'}} fullWidth>
               Send Message
             </Button>
             <Snackbar
@@ -199,8 +199,8 @@ const ContactForm = () => {
           endIcon={<DownloadIcon />}
           href={resume}
           download
-          sx={{
-            background: 'linear-gradient(90deg, #6366f1, #3b82f6)', // Indigo to Blue gradient
+           sx={{ 
+            background: 'linear-gradient(90deg,rgb(89, 12, 231),rgb(14, 236, 62))', 
             color: '#fff',
             borderRadius: '20px',
             textTransform: 'none',
@@ -209,7 +209,7 @@ const ContactForm = () => {
             paddingY: 1.5,
             boxShadow: 3,
             '&:hover': {
-              background: 'linear-gradient(90deg, #4f46e5, #2563eb)', // Slightly darker on hover
+              background: 'linear-gradient(90deg,rgb(89, 12, 231),rgb(14, 236, 62))', 
               boxShadow: 6,
               transform: 'scale(1.05)',
               transition: '0.3s ease',

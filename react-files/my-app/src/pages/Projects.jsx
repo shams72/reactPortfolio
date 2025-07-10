@@ -1,4 +1,3 @@
-import React from "react";
 import { Box, Typography, Link, Paper } from "@mui/material";
 
 const projects = [
@@ -18,7 +17,7 @@ const projects = [
     title: "ShopEsy",
     link: "https://github.com/shams72/ShopEsy",
     description:
-      "ShopEasy is a simple CRUD application developed as part of a web development course to learn React. The backend was implemented using a RESTful API with Express and tested with Jest and Supertest. Built with React and TypeScript, it allows users to add articles to a shopping list and perform CRUD operations on both articles and the list.",
+      "ShopEasy is a simple CRUD application developed as part of a web development course to learn React. The backend was implemented using RESTful API with Express and tested with Jest and Supertest. Built with React and TypeScript, it allows users to add articles to a shopping list and perform CRUD operations on both articles and the list.",
   },
 
   {

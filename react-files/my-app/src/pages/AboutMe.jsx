@@ -1,4 +1,3 @@
-import React from "react";
 import { Typography, Paper, Box, Avatar } from "@mui/material";
 import pic from "../assets/pic2.jpg";
 
@@ -37,7 +36,7 @@ const AboutMe = () => {
           padding: 4,
           background: "rgba(151, 144, 144, 0.28)", // Frosted glass effect
           backdropFilter: "blur(8px)",
-          boxShadow: "0 8px 32px 0 rgba(26, 37, 197, 0.37)",
+          boxShadow: "0 8px 32px 0 rgba(26, 197, 189, 0.37)",
           border: "1px solid rgba(255, 255, 255, 0.18)",
           color: "white",
           textAlign: "left",
@@ -63,7 +62,7 @@ const AboutMe = () => {
           paragraph
           sx={{ fontSize: "1.2rem", lineHeight: 1.8, color: "white" }}
         >
-          My name is Shams, and I am currently a Computer Science bachelor's student
+          My name is Shams, and I am currently a Computer Science Bachelor's student
           at Darmstadt University of Applied Sciences, in my sixth semester. Alongside
           my studies, I work as a Werkstudent in software development and as a student
           assistant at my university, where I work with Python and Docker containers.

@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import space from "../assets/space2.jpg"
 import { Snackbar, Alert } from "@mui/material";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import {
   TextField,
   Button,
@@ -11,7 +10,7 @@ import {
 } from "@mui/material";
 import DownloadIcon from '@mui/icons-material/Download';
 import resume from "../assets/Lebenslauf.pdf"
-import { FaXing } from 'react-icons/fa'; // React Icons Xing Icon
+
 
 
 const ContactForm = () => {
@@ -175,24 +174,6 @@ const ContactForm = () => {
         <Typography variant="body1" sx={{ mt: 2 }}>
           Email: <strong>shamsmohammed726@gmail.com</strong>
         </Typography>
-        <div>
-          <a
-            href="https://www.linkedin.com/in/shams-mohammed-5a7a372ba/"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", cursor: "pointer" }} // Cursor on LinkedIn icon
-          >
-            <LinkedInIcon style={{ fontSize: 40, color: "blue" }}  />
-          </a>
-          <a
-            href="https://www.xing.com/profile/shams_kabir/web_profiles?expandNeffi=true"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", cursor: "pointer" }} // Cursor on Xing icon
-          >
-             <FaXing style={{ fontSize: 40, color: "green" }} /> 
-          </a>
-        </div>
         <Button
           variant="contained"
           size="large"
@@ -200,12 +181,13 @@ const ContactForm = () => {
           href={resume}
           download
            sx={{ 
-            background: 'linear-gradient(90deg,rgb(89, 12, 231),rgb(14, 236, 62))', 
+            background: 'linear-gradient(90deg,rgb(231, 111, 12),rgb(202, 13, 101))', 
             color: '#fff',
             borderRadius: '20px',
             textTransform: 'none',
             fontWeight: 'bold',
             paddingX: 3,
+            marginY: 2.5,
             paddingY: 1.5,
             boxShadow: 3,
             '&:hover': {

@@ -1,5 +1,5 @@
 import { Typography, Paper, Box, Avatar } from "@mui/material";
-import pic from "../assets/pic2.jpg";
+import pic2 from "../assets/pic2.png";
 
 const AboutMe = () => {
   return (
@@ -100,6 +100,7 @@ const AboutMe = () => {
           ))}
         </Box>
       </Box>
+      
 
       <Box
         sx={{
@@ -112,9 +113,10 @@ const AboutMe = () => {
           marginTop: { xs: 4, md: 0 },
         }}
       >
-        <Avatar
+       
+          <Avatar
           alt="My Avatar"
-          src={pic}
+          src={pic2}
           sx={{
             width: { xs: 200, md: 250 },
             height: { xs: 200, md: 250 },
